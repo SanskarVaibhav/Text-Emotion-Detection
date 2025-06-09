@@ -1,56 +1,84 @@
-**Text Emotion Detection**
+
+# Text Emotion Detection
 
 A machine learning project to detect emotions from text using Python.
 
-**Dataset Used**
- 1. Source: The dataset is located in the data/ directory.
+---
 
- 2. Description: It likely contains labeled text samples with corresponding emotion tags (e.g., joy, anger, sadness, etc.).
-    (If you know the exact dataset, e.g., Kaggle's Emotion Dataset, specify it here.)
+## Dataset Used
 
-**Approach Summary**
+- **Source:** The dataset is located in the `data/` directory.
+- **Description:** The dataset contains labeled text samples, each with a corresponding emotion tag (e.g., joy, anger, sadness, etc.).  
+  *(If you are using a specific dataset such as Kaggle's Emotion Dataset, please specify here.)*
 
-1.Preprocessing:
-  a.Text data is cleaned and tokenized.
-  b.Stopwords removal and lowercasing are applied.
+---
 
-2.Feature Extraction:
-  a.Text features are extracted using TF-IDF vectorization.
+## Approach Summary
 
-3.Modeling:
-  a.A machine learning classifier (e.g., Logistic Regression, SVM, or a simple Neural Network) is trained on the processed features to predict the emotion label.
+### 1. Preprocessing
+- **Text Cleaning:** Text data is cleaned and tokenized.
+- **Normalization:** Stopwords are removed and text is converted to lowercase.
 
-4.Deployment:
-  a.The trained model is deployed via a simple web app using app.py, allowing users to input text and receive emotion predictions.
+### 2. Feature Extraction
+- **Vectorization:** Text features are extracted using TF-IDF vectorization.
 
-**Dependencies**
+### 3. Modeling
+- **Classifier Training:** A machine learning classifier (e.g., Logistic Regression, SVM, or a simple Neural Network) is trained on the processed features to predict the emotion label.
 
-1.To run this project, install the following Python packages:
+### 4. Deployment
+- **Web Application:** The trained model is deployed via a simple web app using `app.py`, allowing users to input text and receive emotion predictions.
 
-  pip install numpy pandas scikit-learn flask
+---
 
-2.If Jupyter Notebooks are used, also install:
+## Dependencies
 
+To run this project, ensure the following Python packages are installed:
+
+```
+pip install numpy pandas scikit-learn flask
+```
+
+If you wish to use Jupyter Notebooks for development or exploration, also install:
+
+```
 pip install notebook
+```
 
-**How to Run**
-1.Clone the repository:
+---
 
-git clone https://github.com/SanskarVaibhav/Text-Emotion-Detection.git
-cd Text-Emotion-Detection
+## How to Run
 
-2.Install dependencies:
-See above.
+1. **Clone the repository:**
 
-3.Run the app:
+   ```
+   git clone https://github.com/SanskarVaibhav/Text-Emotion-Detection.git
+   cd Text-Emotion-Detection
+   ```
 
-python app.py
+2. **Install dependencies:**
 
-**The web interface will be available at http://localhost:5000.**
+   ```
+   pip install numpy pandas scikit-learn flask
+   ```
+   *(If using Jupyter Notebooks, install `notebook` as well.)*
 
-**Repository Structure**
+3. **Run the app:**
 
+   ```
+   python app.py
+   ```
+
+   **Access the web interface at:** [http://localhost:5000](http://localhost:5000)
+
+---
+
+## Repository Structure
+
+```
 data/           # Dataset files
 model/          # Saved model files
 app.py          # Web application script
 notebooks/      # (If present) Jupyter notebooks for exploration and model training
+```
+
+---
